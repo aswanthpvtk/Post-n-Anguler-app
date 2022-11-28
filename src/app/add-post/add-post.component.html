@@ -5,22 +5,22 @@
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">UserId:</label>
-                    <input type="text" class="form-control">
+                    <input name="uid" [(ngModel)]="uid" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="fomr-label">Id:</label>
-                    <input type="text" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Title:</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Body:</label>
-                    <input type="text" class="form-control">
+                    <input name="body" [(ngModel)]="body" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
